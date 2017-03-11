@@ -87,6 +87,12 @@ console.log(isGreaterThan(3,2));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if(boo = 1){
+    return "true";
+}
+}
+console.log(mustBeTrue(1));
 
 /*
  * #5
