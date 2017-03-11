@@ -235,7 +235,6 @@ var num = 500; //set var just to know what number using.
 console.log(num);
 console.log(evenStevens(num));
 
-
 /*
  * #11
  * Function - daClub
@@ -249,6 +248,16 @@ console.log(evenStevens(num));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+  if(age >= 21 && cover >= 21){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street."
+  }
+}
+console.log(daClub(20,20));
+console.log(daClub(21,20));
+console.log(daClub(21,21));
 
 /*
  * #12
