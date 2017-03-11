@@ -110,10 +110,10 @@ function bigBird(word){
   if(word.length === 3){
     return "Word to Big Bird!";
   }else{
-    return "NO go";
+    return "No go";
   }
 }
-console.log(bigBird("ly"));
+console.log(bigBird("fly"));
 /*
  * #6
  * Function - isEqual
@@ -127,6 +127,12 @@ console.log(bigBird("ly"));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if(first === second){
+    return "You look mahvelous!";
+  }else{return "I don't know who you are anymore.";}
+}
+console.log(isEqual(1,1));
 
 /*
  * #7
