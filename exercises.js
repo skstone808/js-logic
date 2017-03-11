@@ -323,6 +323,24 @@ console.log(moneyTrain(1000));
  * Console.log budget and doughnutBought again.
 */ 
 
+//COME BACK TO THIS ONE
+/*var budget = 30
+var doughnutPrice = 2
+var doughnutBought = 0
+
+function buyDoughnut(){
+  if(buyDoughnut()){
+  return (budget - (doughnutBought * doughnutPrice))
+}
+{
+  if(buyDoughnut());
+  doughnutBought++;{
+    return doughnutBought
+  }
+}
+console.log(buyDoughnut);
+*/
+
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -350,7 +368,11 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
+ var players = ["1", "2", "3", "4", "5"];
 
+ for (var i = 0; i<players.length; i++){
+  console.log("Player: " + players[i]);
+}
 
 /* 
  * #16
