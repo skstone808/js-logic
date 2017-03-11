@@ -213,6 +213,28 @@ console.log(dirty30(1,2,3));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(((num / 2) - (num / 2)) === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log("evenStevens");
+console.log(evenStevens(7));
+
+//v.2
+function evenStevens(num){
+  if(num % 2 === 0){
+  return true;
+}else{
+  return false;
+  }
+}
+var num = 500; //set var just to know what number using.
+console.log(num);
+console.log(evenStevens(num));
+
 
 /*
  * #11
