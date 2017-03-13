@@ -351,6 +351,7 @@ The for loop is made up for 3 parts:
 2) Condition (i.e. i<arr.length;)
 3) Update (i.e. i++)
 */
+console.log("need to complete");
 
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
@@ -378,7 +379,7 @@ for (var i = 0; i<toyotaModels.length; i++){
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
-  var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
 for (var i = 0; i<myFavFoods.length; i++){
   console.log("I like eat one " + myFavFoods[i] + ", you faka!")
@@ -398,7 +399,19 @@ for (var i = 0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+console.log("17-20, need to complete.");
 
+// I GOT PROBLEMS WITH 17. I worked all night after school and I forgot how to do it, lol. shit.
+
+/*var numArray = [1, 2, 3, 4, 5];
+var total = 0
+function sumItUp(arr){
+  for(i=0; i<numArray.length; i++){
+        total = numArray[i];
+}
+
+ return total;
+ */
 
 /*
  * #18
@@ -415,6 +428,8 @@ for (var i = 0; i<myFavFoods.length; i++){
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
+
+
 
 /*
  * #19
