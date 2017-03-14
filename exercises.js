@@ -298,7 +298,7 @@ function moneyTrain(speed){
   if(speed < 50){
     return "You are riding Honolulu's Rail.";
   }
-  if(speed >= 50 && speed <100){
+  if(speed >= 50 && speed <100){ //use else if
     return "You are riding an Amtrak.";
   }
   if(speed >= 100){
@@ -324,23 +324,26 @@ console.log(moneyTrain(1000));
 */ 
 
 //COME BACK TO THIS ONE
-/*var budget = 30
-var doughnutPrice = 2
+
+var budget = 25
+var doughnutPrice = 5
 var doughnutBought = 0
 
 function buyDoughnut(){
-  if(buyDoughnut()){
-  return (budget - (doughnutBought * doughnutPrice))
-}
-{
-  if(buyDoughnut());
-  doughnutBought++;{
-    return doughnutBought
+  //check to see if have enough money to buy
+  if(budget >= doughnutPrice){   
+  budget -= doughnutPrice //budge = budget - doughNut price;   
+  doughnutBought++;
   }
 }
-console.log(buyDoughnut);
-*/
 
+buyDoughnut();
+console.log("budget",budget);
+console.log("doughtnutBought",doughnutBought);
+
+buyDoughnut();
+console.log("budget",budget);
+console.log("doughtnutBought",doughnutBought);
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -401,17 +404,18 @@ for (var i = 0; i<myFavFoods.length; i++){
 */
 
 
-// Got it
+// Got it with help.
 
 var numArray = [1, 2, 3, 4, 5];
-var total = 0
-
-  for(var i=0; i<numArray.length; i++){
-        total += numArray[i];
+var total = 0;
+function sumItUp(arr){
+  for(var i=0; i<arr.length; i++){
+        total += arr[i];
   }
+return total;
+}
+sumItUp(numArray);
 console.log(total);
-
-
 
 /*
  * #18
@@ -428,12 +432,22 @@ console.log(total);
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
+ 
 function allStars(ballers){
-  for(i=0; i<players.length; i++){
-
-  }
+  for(var i=0; i<ballers.length; i++){
+     // console.log(ballers[i]); 
+        if(i % 2 === 0){
+        console.log(ballers[i]);
+        east.push(ballers[i]);
+        
+      }else{
+        west.push(ballers[i]);
+      }
 }
-
+}
+allStars(players);
+console.log(east);
+console.log(west);
 
 /*
  * #19
@@ -447,7 +461,7 @@ function allStars(ballers){
  * Console.log your results.
 */ 
 
-//  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+//var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
 
 /*
