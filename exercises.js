@@ -1,3 +1,4 @@
+
 /*
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
@@ -372,10 +373,10 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
- var players = ["1", "2", "3", "4", "5"];
+ //did wrong
 
- for (var i = 0; i<players.length; i++){
-  console.log("Player: " + players[i]);
+ for(var i = 1; i<6; i++){
+  console.log("Player: " + i);
 }
 
 /* 
@@ -428,7 +429,7 @@ console.log(total);
  * The function will loop through the players array and will put all the even number indexed players in the `east` array and the rest in the `west` array.
  * Console.log both the east and west arrays.
 */ 
-
+/*
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
@@ -448,7 +449,7 @@ function allStars(ballers){
 allStars(players);
 console.log(east);
 console.log(west);
-
+*/
 /*
  * #19
  * Function - subways
@@ -461,9 +462,44 @@ console.log(west);
  * Console.log your results.
 */ 
 
-//var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+//REDO FOCKER
 
+/*var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+function subways(special){
+  for(var i = 0; i<special.length; i++){
+  //console.log(special[i]);
+    if(i % 2 === 1){
+      //console.log(special[i],i);
+      //subOftheDay.pull(special[i]);
+      //subOftheDay.push(special["Classic Tuna"]);
+      special[i] = "Classic Tuna";
+    }
+  }
+}
+subways(subOftheDay);
+console.log(suboOftheDay);
+*/
 
+/*  var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
+  var east = [];
+  var west = [];
+ 
+function allStars(ballers){
+  for(var i=0; i<ballers.length; i++){
+     // console.log(ballers[i]); 
+        if(i % 2 === 0){
+        console.log(ballers[i]);
+        east.push(ballers[i]);
+        
+      }else{
+        west.push(ballers[i]);
+      }
+}
+}
+allStars(players);
+console.log(east);
+console.log(west);
+*/
 /*
 Final Boss
  * #20
@@ -476,10 +512,20 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  //var phrase = "An apple a day keeps Alice feeling awesome!"
+var phrase = "An apple a day keeps Alice feeling awesome!"
+var newArray = [];
   
+function removeLetter(str){
+  for(var i = 0; i<str.length; i++){
+    console.log(str[i]);
+    if(str[i] !== "a" && str[i] !== "A"){
+      newArray.push(str[i]);
+    }
+  }
+}
 
-
+removeLetter(phrase);
+console.log(newArray);
 
 
 
