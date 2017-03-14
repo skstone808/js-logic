@@ -399,19 +399,19 @@ for (var i = 0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
-console.log("17-20, need to complete.");
 
-// I GOT PROBLEMS WITH 17. I worked all night after school and I forgot how to do it, lol. shit.
 
-/*var numArray = [1, 2, 3, 4, 5];
+// Got it
+
+var numArray = [1, 2, 3, 4, 5];
 var total = 0
-function sumItUp(arr){
-  for(i=0; i<numArray.length; i++){
-        total = numArray[i];
-}
 
- return total;
- */
+  for(var i=0; i<numArray.length; i++){
+        total += numArray[i];
+  }
+console.log(total);
+
+
 
 /*
  * #18
@@ -428,7 +428,11 @@ function sumItUp(arr){
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
+function allStars(ballers){
+  for(i=0; i<players.length; i++){
 
+  }
+}
 
 
 /*
@@ -443,7 +447,7 @@ function sumItUp(arr){
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+//  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
 
 /*
@@ -458,7 +462,7 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  var phrase = "An apple a day keeps Alice feeling awesome!"
+  //var phrase = "An apple a day keeps Alice feeling awesome!"
   
 
 
